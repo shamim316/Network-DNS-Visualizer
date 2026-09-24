@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DNS Visualizer</title>
+  <meta name="description" content="An animated, step-by-step visual guide to how DNS works: recursive resolution, caching, record types, IPv4 vs IPv6, DNSSEC, encrypted DNS and attacks.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1220'/%3E%3Ccircle cx='16' cy='8' r='3.5' fill='%23f5c542'/%3E%3Ccircle cx='8' cy='23' r='3.5' fill='%234cc9f0'/%3E%3Ccircle cx='24' cy='23' r='3.5' fill='%2334d399'/%3E%3Cpath d='M16 11.5L8 19.5M16 11.5l8 8' stroke='%23a78bfa' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="menu-btn icon-btn btn" aria-label="Toggle navigation"></button>
+    <a class="brand" href="#overview">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>DNS <b>Visualizer</b></span>
+    </a>
+    <span class="brand-tag">How a name becomes a connection, step by step</span>
+    <button class="theme-btn icon-btn btn" aria-label="Toggle theme"></button>
+  </header>
+  <div class="layout">
+    <nav class="sidenav" aria-label="Lessons">
+      <ol class="nav-list"></ol>
+      <div class="nav-foot">
+        <p><kbd>Space</kbd> play/pause · <kbd>←</kbd><kbd>→</kbd> step · <kbd>R</kbd> restart</p>
+        <p>Addresses use the RFC 5737 / RFC 3849 documentation ranges, except the real root and <code>.com</code> servers.</p>
+      </div>
+    </nav>
+    <main class="content" id="main"></main>
+  </div>
+
+  <script src="js/icons.js"></script>
+  <script src="js/dns.js"></script>
+  <script src="js/net.js"></script>
+  <script src="js/inspector.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/sections/overview.js"></script>
+  <script src="js/sections/resolution.js"></script>
+  <script src="js/sections/connect.js"></script>
+  <script src="js/sections/caching.js"></script>
+  <script src="js/sections/records.js"></script>
+  <script src="js/sections/ipv6.js"></script>
+  <script src="js/sections/dnssec.js"></script>
+  <script src="js/sections/privacy.js"></script>
+  <script src="js/sections/attacks.js"></script>
+</body>
+</html>
