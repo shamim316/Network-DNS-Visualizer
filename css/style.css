@@ -5,55 +5,56 @@
    =================================================================== */
 
 :root {
-  /* dark theme: forest green + earthy brown, orange & yellow highlights */
-  --bg: #0b140e;
-  --bg2: #10200f;
-  --card: #1e1811;
-  --card2: #282016;
-  --line: #3a2f22;
-  --line2: #54432f;
-  --text: #f4ecdb;
-  --muted: #bcae92;
-  --faint: #857861;
-  --accent: #f59e2b;
-  --shadow: 0 10px 30px rgba(0, 0, 0, .45);
+  /* dark theme: slate greys (#2c2f33 #454a51 #777d86) with terracotta #b46b4d and cream #f1dfd6 */
+  --bg: #2c2f33;
+  --bg2: #26292d;
+  --card: #34383d;
+  --card2: #3d4248;
+  --line: #454a51;
+  --line2: #5c626a;
+  --text: #f1dfd6;
+  --muted: #aeb3ba;
+  --faint: #777d86;
+  --accent: #b46b4d;
+  --on-accent: #fbf3ee;
+  --shadow: 0 10px 30px rgba(0, 0, 0, .3);
 
-  /* actor tiers */
-  --t-client: #c6e36b;
-  --t-resolver: #f28c38;
-  --t-root: #ffd43b;
-  --t-tld: #d19a5b;
-  --t-auth: #4fcf8f;
-  --t-web: #7fc8b8;
-  --t-evil: #ef5350;
-  --t-observer: #f49ac1;
-  --t-neutral: #a8a08e;
-  --t-mail: #ffb454;
-  --t-ca: #6fd3c6;
+  /* actor tiers (muted tones that sit with the palette) */
+  --t-client: #f1dfd6;
+  --t-resolver: #c97b5a;
+  --t-root: #e3b964;
+  --t-tld: #a9acd0;
+  --t-auth: #8fb59a;
+  --t-web: #8fa9c4;
+  --t-evil: #e0675d;
+  --t-observer: #c98fae;
+  --t-neutral: #9aa0a8;
+  --t-mail: #d8bf84;
+  --t-ca: #86b8b0;
 
   /* packet tones */
-  --c-q: #ffd166;
-  --c-r: #74d99f;
-  --c-ref: #ff8c42;
-  --c-bad: #ef5350;
-  --c-warn: #e8b86b;
-  --c-enc: #c9a7eb;
-  --c-gen: #9cc9b4;
-  --c-tls: #c9a7eb;
-  --c-http: #8fd3c7;
-  --c-smtp: #ffe066;
-  --c-ok: #74d99f;
-  --c-info: #ffd166;
-  --c-ipc: #bcae92;
+  --c-q: #f1dfd6;
+  --c-r: #8fb59a;
+  --c-ref: #dd9463;
+  --c-bad: #e0675d;
+  --c-warn: #e3b964;
+  --c-enc: #a9acd0;
+  --c-gen: #8fa9c4;
+  --c-tls: #a9acd0;
+  --c-http: #86b8b0;
+  --c-smtp: #d8bf84;
+  --c-ok: #8fb59a;
+  --c-info: #f1dfd6;
+  --c-ipc: #9aa0a8;
 
   /* hex groups */
-  --hx-len: #bcae92;
-  --hx-hdr: #e0a96d;
-  --hx-q: #8fd3c7;
-  --hx-an: #74d99f;
-  --hx-ns: #ff8c42;
-  --hx-ar: #ffe066;
-  --hx-opt: #f49ac1;
+  --hx-len: #9aa0a8;
+  --hx-hdr: #d49a7e;
+  --hx-q: #f1dfd6;
+  --hx-an: #8fb59a;
+  --hx-ns: #dd9463;
+  --hx-ar: #e3b964;
+  --hx-opt: #c98fae;
 
   --radius: 14px;
   --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -72,6 +73,7 @@
   --muted: #53627e;
   --faint: #8391aa;
   --accent: #0284c7;
+  --on-accent: #ffffff;
   --shadow: 0 10px 30px rgba(15, 23, 42, .08);
 
   --t-client: #0891b2;
@@ -240,7 +242,7 @@ kbd { font-size: 11px; border: 1px solid var(--line2); border-bottom-width: 2px;
 .opt-check input { accent-color: var(--accent); width: 16px; height: 16px; }
 .seg { display: inline-flex; background: var(--card2); border: 1px solid var(--line2); border-radius: 9px; padding: 2px; }
 .seg button { font: 500 13px var(--sans); color: var(--muted); background: none; border: 0; padding: 5px 10px; border-radius: 7px; cursor: pointer; }
-.seg button.on { background: var(--accent); color: var(--bg); }
+.seg button.on { background: var(--accent); color: var(--on-accent); }
 
 /* ------------------------------------------------------------ workspace */
 .workspace { display: grid; grid-template-columns: minmax(0, 1fr) 390px; gap: 16px; align-items: start; }
@@ -522,7 +524,7 @@ tr.tone-warn .c-data { color: var(--c-warn); }
 
 /* ------------------------------------------------------------ transport controls */
 .controls { display: flex; align-items: center; gap: 8px; padding: 10px 12px; flex-wrap: wrap; }
-.play-btn { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600; padding: 7px 16px; }
+.play-btn { background: var(--accent); color: var(--on-accent); border-color: var(--accent); font-weight: 600; padding: 7px 16px; }
 .play-btn .ico { width: 15px; height: 15px; }
 .play-btn:hover { filter: brightness(1.1); }
 .progress { flex: 1; min-width: 80px; height: 6px; border-radius: 3px; background: var(--line); cursor: pointer; overflow: hidden; }
@@ -581,7 +583,7 @@ tr.tone-warn .c-data { color: var(--c-warn); }
 .steplist li.done button { color: var(--text); }
 .steplist li.done .sl-n { background: color-mix(in srgb, var(--accent) 20%, transparent); border-color: var(--accent); }
 .steplist li.current button { background: var(--card2); color: var(--text); }
-.steplist li.current .sl-n { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+.steplist li.current .sl-n { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
 
 /* ------------------------------------------------------------ inspector */
 .insp-head { display: flex; gap: 10px; align-items: flex-start; }
@@ -626,7 +628,7 @@ tr.tone-warn .c-data { color: var(--c-warn); }
 .hasc .hb { padding: 0; }
 .hb { border-radius: 3px; cursor: default; }
 .hb.on { background: currentColor; }
-.hb.on { color: var(--bg) !important; background: var(--accent); }
+.hb.on { color: var(--on-accent) !important; background: var(--accent); }
 .g-len { color: var(--hx-len); }
 .g-hdr { color: var(--hx-hdr); }
 .g-q { color: var(--hx-q); }
@@ -693,7 +695,7 @@ tr.tone-warn .c-data { color: var(--c-warn); }
 .hero p { color: var(--muted); font-size: 16px; }
 .hero .cta { display: flex; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
 .cta a { text-decoration: none; }
-.cta .primary { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600; }
+.cta .primary { background: var(--accent); color: var(--on-accent); border-color: var(--accent); font-weight: 600; }
 .tree-card { padding: 8px; }
 .tree-svg { width: 100%; height: auto; display: block; }
 .tree-svg .edge { stroke: var(--line2); stroke-width: 1.6; fill: none; }
