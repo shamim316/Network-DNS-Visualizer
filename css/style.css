@@ -5,54 +5,55 @@
    =================================================================== */
 
 :root {
-  --bg: #060a13;
-  --bg2: #0a101d;
-  --card: #0e1628;
-  --card2: #131d33;
-  --line: #1e2a45;
-  --line2: #2a3a5e;
-  --text: #e3e9f4;
-  --muted: #8a9bbb;
-  --faint: #56668a;
-  --accent: #4cc9f0;
-  --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+  /* dark theme: forest green + earthy brown, orange & yellow highlights */
+  --bg: #0b140e;
+  --bg2: #10200f;
+  --card: #1e1811;
+  --card2: #282016;
+  --line: #3a2f22;
+  --line2: #54432f;
+  --text: #f4ecdb;
+  --muted: #bcae92;
+  --faint: #857861;
+  --accent: #f59e2b;
+  --shadow: 0 10px 30px rgba(0, 0, 0, .45);
 
   /* actor tiers */
-  --t-client: #4cc9f0;
-  --t-resolver: #a78bfa;
-  --t-root: #f5c542;
-  --t-tld: #fb923c;
-  --t-auth: #34d399;
-  --t-web: #60a5fa;
-  --t-evil: #f43f5e;
-  --t-observer: #f472b6;
-  --t-neutral: #94a3b8;
-  --t-mail: #facc15;
-  --t-ca: #2dd4bf;
+  --t-client: #c6e36b;
+  --t-resolver: #f28c38;
+  --t-root: #ffd43b;
+  --t-tld: #d19a5b;
+  --t-auth: #4fcf8f;
+  --t-web: #7fc8b8;
+  --t-evil: #ef5350;
+  --t-observer: #f49ac1;
+  --t-neutral: #a8a08e;
+  --t-mail: #ffb454;
+  --t-ca: #6fd3c6;
 
   /* packet tones */
-  --c-q: #7dd3fc;
-  --c-r: #34d399;
-  --c-ref: #fb923c;
-  --c-bad: #f43f5e;
-  --c-warn: #fbbf24;
-  --c-enc: #c084fc;
-  --c-gen: #60a5fa;
-  --c-tls: #c084fc;
-  --c-http: #38bdf8;
-  --c-smtp: #facc15;
-  --c-ok: #34d399;
-  --c-info: #7dd3fc;
-  --c-ipc: #94a3b8;
+  --c-q: #ffd166;
+  --c-r: #74d99f;
+  --c-ref: #ff8c42;
+  --c-bad: #ef5350;
+  --c-warn: #e8b86b;
+  --c-enc: #c9a7eb;
+  --c-gen: #9cc9b4;
+  --c-tls: #c9a7eb;
+  --c-http: #8fd3c7;
+  --c-smtp: #ffe066;
+  --c-ok: #74d99f;
+  --c-info: #ffd166;
+  --c-ipc: #bcae92;
 
   /* hex groups */
-  --hx-len: #94a3b8;
-  --hx-hdr: #a78bfa;
-  --hx-q: #7dd3fc;
-  --hx-an: #34d399;
-  --hx-ns: #fb923c;
-  --hx-ar: #facc15;
-  --hx-opt: #f472b6;
+  --hx-len: #bcae92;
+  --hx-hdr: #e0a96d;
+  --hx-q: #8fd3c7;
+  --hx-an: #74d99f;
+  --hx-ns: #ff8c42;
+  --hx-ar: #ffe066;
+  --hx-opt: #f49ac1;
 
   --radius: 14px;
   --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
